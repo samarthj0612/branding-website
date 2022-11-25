@@ -1,0 +1,336 @@
+@font-face {
+  font-family: "gilroy";
+  src: url("/fonts/Gilroy-Regular.otf");
+}
+@font-face {
+  font-family: "frock thin";
+  src: url("/fonts/FrockThin-p7xZv.ttf");
+}
+@font-face {
+  font-family: "optivenus";
+  src: url("/fonts/OPTIVenus-BoldExtended.otf");
+}
+@font-face {
+  font-family: "morgan";
+  src: url("/fonts/morgan.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#cover {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: #222;
+  color: #ecece9;
+  font-family: "optivenus";
+  font-size: 5vw;
+  z-index: 9999;
+}
+#cover h1 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+#sj-main {
+  width: 100%;
+  position: relative;
+}
+header {
+  height: 45vh;
+  width: 100%;
+  background-color: rgb(218, 214, 203);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #222;
+  padding: 30px;
+}
+header h1 {
+  font-family: "optivenus";
+  font-size: 12vw;
+}
+header p {
+  font-family: "gilroy";
+  font-size: 20px;
+  width: 20%;
+}
+.main {
+  position: relative;
+}
+#main1 {
+  height: 110vh;
+  width: 100%;
+  background-color: #222;
+  transition: all 2s;
+}
+#main2 {
+  background-color: black;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#main2 p {
+  color: #ecece9;
+  width: 40%;
+  font-size: 2.2vw;
+  font-family: "gilroy";
+}
+#leftband {
+  height: 90vh;
+  width: 10%;
+  background-color: rgba(61, 61, 61, 0.58);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 50%;
+  left: 30px;
+  transform: translate(0%, -50%);
+  z-index: 9998;
+  font-family: "optivenus";
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#leftband h1 {
+  transform: rotate(-90deg);
+}
+#main3 {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+#main3 #content {
+  background-color: #222;
+  background-image: url(https://lukegreenaway.xyz/wp-content/uploads/2022/02/TINYFIED-FLEX-Hero-1920-x-1088-v1.png);
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+  width: 60%;
+  /* border: 1px solid white; */
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(0%, -50%);
+}
+#main3 #logo {
+  height: 150px;
+  width: 150px;
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 4px;
+  position: absolute;
+  top: -10%;
+  left: 10%;
+}
+#main3 #logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 140%;
+  animation: rotate 10s linear infinite;
+}
+#main3 #logo div {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+#main3 #logo > div {
+  background-color: black;
+  padding: 25px;
+}
+#main3 #logo > div > div {
+  border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main3 #logo > div > div > h1 {
+  color: white;
+  font-size: 3vw;
+  font-family: "gilroy";
+  transform: rotate(20deg);
+}
+#main3 #content > h1 {
+  position: absolute;
+  top: 50%;
+  right: -35%;
+  transform: translate(0%, -50%);
+  font-family: "optivenus";
+  color: #ecece9;
+  font-size: 70px;
+}
+#main4 {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+#main4 #content {
+  background-color: #222;
+  background-image: url(https://lukegreenaway.xyz/wp-content/uploads/2022/02/TINYFIED-ADIDAS-Y3-Hero-1920-x-1088-v1.png);
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+  width: 65%;
+  /* border: 1px solid white; */
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(0%, -50%);
+}
+#main4 #content > h1 {
+  position: absolute;
+  top: 50%;
+  left: -25%;
+  transform: translate(0%, -50%);
+  font-family: "optivenus";
+  color: #ecece9;
+  font-size: 80px;
+}
+
+#main5 {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+#main5 #content {
+  background-color: #222;
+  background-image: url(https://lukegreenaway.xyz/wp-content/uploads/2022/02/TINYFIED-MEANING-CONFERENCE-Hero-1920-x-1088-v1.png);
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+  width: 60%;
+  /* border: 1px solid white; */
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0%, -50%);
+}
+#main5 #content > h1 {
+  position: absolute;
+  top: 50%;
+  right: -50%;
+  transform: translate(0%, -50%);
+  font-family: "optivenus";
+  color: #ecece9;
+  font-size: 70px;
+}
+#main6 {
+  height: 80vh;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+#band {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  height: 20vh;
+  width: 150%;
+  border: 2px solid rgba(255, 255, 255, 0.397);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 4vw;
+  color: #ecece9;
+  font-family: "morgan";
+  font-weight: lighter;
+  padding-left: 50px;
+}
+#main7 {
+  height: 120vh;
+  width: 100%;
+  background-color: black;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: rgb(218, 214, 203);
+  padding-bottom: 50px;
+  font-family: "gilroy";
+}
+#main7 h1 {
+  margin-left: 10%;
+  align-self: flex-start;
+}
+#main7 div {
+  height: 25%;
+  width: 90%;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  /* font-size: 1.5vw; */
+  font-size: 20px;
+}
+#main7 div p {
+  width: 60%;
+  text-align: justify;
+}
+#space {
+  height: 80vh;
+  width: 100%;
+  background-color: black;
+}
+#main8 {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "gilroy";
+  background-color: rgb(250, 235, 215);
+  font-size: 3vw;
+  /* border: 1px solid black; */
+  font-family: "optivenus";
+}
+#main8 a {
+  background-color: white;
+  padding: 4px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 2vw;
+}
+footer {
+  background-color: antiquewhite;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "frock thin";
+}
+footer p {
+  font-weight: 600;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
